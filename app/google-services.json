@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "930483465285",
+    "firebase_url": "https://review-f7ff4-default-rtdb.firebaseio.com",
+    "project_id": "review-f7ff4",
+    "storage_bucket": "review-f7ff4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930483465285:android:4c209f98ffc6f4ce3f472c",
+        "android_client_info": {
+          "package_name": "com.example.review"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuIP4cOmy9Ov3MLeUVTjC4XabKNi6Sq9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

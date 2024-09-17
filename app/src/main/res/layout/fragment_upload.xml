@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Video Title Input -->
+        <EditText
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Video Title"
+            android:textColorHint="#575252"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="#F6F2F2"/>
+
+        <!-- Video Description Input -->
+        <EditText
+            android:id="@+id/video_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Video Description"
+            android:inputType="textMultiLine"
+            android:textColorHint="#575252"
+            android:padding="12dp"
+            android:background="#F6F1F1"
+            android:minHeight="100dp"/>
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Video Category"
+            android:inputType="textMultiLine"
+            android:textColorHint="#575252"
+            android:padding="12dp"
+            android:background="#F6F1F1"
+            android:minHeight="100dp"/>
+
+        <!-- Product Name Input -->
+        <EditText
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Product Name"
+            android:inputType="text"
+            android:textColorHint="#575252"
+            android:padding="12dp"
+            android:background="#fff"/>
+
+        <!-- Video URL Input -->
+        <EditText
+            android:id="@+id/video_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Video URL or Select from Device"
+            android:inputType="textUri"
+            android:textColorHint="#575252"
+            android:padding="12dp"
+            android:background="#fff"/>
+
+        <!-- Select Video Button -->
+        <Button
+            android:id="@+id/select_video_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Video from Device"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:backgroundTint="#000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Thumbnail URL Input -->
+        <EditText
+            android:id="@+id/thumbnail_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Thumbnail URL or Select from Device"
+            android:inputType="textUri"
+            android:textColorHint="#575252"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="#fff"/>
+
+        <!-- Select Thumbnail Button -->
+        <Button
+            android:id="@+id/select_thumbnail_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Thumbnail from Device"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:backgroundTint="#000"
+            android:textColor="@android:color/white"/>
+
+        <!-- ImageView to Display Selected Thumbnail -->
+        <ImageView
+            android:id="@+id/video_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Upload Button -->
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#000"
+            android:textColor="@android:color/white"/>
+
+        <!-- ProgressBar for Upload Process -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
